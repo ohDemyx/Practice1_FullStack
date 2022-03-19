@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Deezer</title>
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="deezer.css" rel="stylesheet" type="text/css">
+
+    <script>
+        window.onload=function(){
+            
+            var c=document.getElementById("miCanvas");
+            var cxt=c.getContext("2d");
+            cxt.fillStyle="lightgrey"; //Relleno
+            cxt.fillRect(0,0,1800,10); 
+            
+            document.getElementById("play").addEventListener("click",function(){
+                document.getElementById("vid").play();
+                document.getElementById("instrucciones").style.display="none";
+            },false);
+            
+            
+        }
+    </script>
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-white fixed-top" style="font-family: Roboto; font-size: 20px; height: 80px; ">
+        <a class="navbar-brand" href="#"><img src="logo.png" style="width: 135px; margin-left: 106px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: black; ">Descargar <span class="sr-only">(current)</span></a>
+                </li>
+                <div style="margin-left: 20px;"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: black; ">Ofertas</a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary" style="width: 130px; float: right; background-color: #FEFEFE; color: black; border-color: #2D96C8; border-width: 2px; margin-left: 40px; border-bottom-left-radius: 20px; border-top-left-radius: 20px; border-bottom-right-radius: 20px; border-top-right-radius: 20px;">Conectarse</button>
+                </li>
+                <li style="text-align: right;">
+                    <button type="button" class="btn btn-primary" style="width: 130px; float: right; background-color: #2D96C8; border-color: #2D96C8;  margin-left: 20px; border-bottom-left-radius: 20px; border-top-left-radius: 20px; border-bottom-right-radius: 20px; border-top-right-radius: 20px;">Registrarse</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="video-background-holder">
+	    <div class="video-background-overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+        <div class="video-background-content container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-4">Siente la música con Deezer!</h1>
+                    <p class="lead mb-0">A continuación te presentamos un vídeo interactivo, el cual te ayudará en la creación de tu primera playlist en Deezer.</p>
+                    <p class="lead mb-0">Prepárate para la revolución.</p><br>
+                    <input type="button" class="btn btn-secondary btn-outline col-sm-2" value="¡Comenzar!"> 
+                    
+                </div>
+            </div>
+        </div>                
+    </div>
+
+
+    <br><br><br>
+
+    <div class="container"> 
+
+        <div class="row">   
+            <div class="col-md-6" id="telefono">
+                <img id="imagen1" src="phone.png">
+            </div>
+
+            <div class="col-md-3" id="soltarcaja1">       
+                <h4 id="h2hab"> Toda la música en tu bolsillo</h4><br>
+                    <p>Encuentra tus futuras pasiones y tus canciones favoritas de siempre entre 56 millones de canciones.</p><br><br>
+                <h4 id="h2hab"> Crea tu propia lista musical</h4><br>
+                    <p>Crea playlists con millones de canciones y llévalas contigo allá donde vayas.</p>
+            </div>   
+            <div class="col-md-3" id="soltarcaja1">       
+        
+                <h4 id="h2hab"> ¿No hay wifi? No pasa nada</h4><br>
+                    <p>Con Deezer Premium, no necesitas estar conectado para disfrutar de tus canciones favoritas.</p><br><br>
+                <h4 id="h2hab"> A tu medida</h4><br>
+                    <p>Flow se entera de lo que te gusta y de lo que no. Descubre tu propia banda sonora..</p>
+            </div>   
+        </div>
+    </div>
+<br>
+    <div class="jumbotron bg-white">
+        <div class="row w-100">
+            <div  class="col-md-3">
+                <div id="idcolor1" class="card border-info mx-sm-1 p-3">
+                    <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-car" aria-hidden="true"></span></div>
+                    <div class="text-info text-center mt-3"><h4>Cars</h4></div>
+                    <div class="text-info text-center mt-2"><h1>234</h1></div>
+                </div>
+            </div>
+            <div  class="col-md-3">
+                <div id="idcolor2" class="card border-success mx-sm-1 p-3">
+                    <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-eye" aria-hidden="true"></span></div>
+                    <div class="text-success text-center mt-3"><h4>Eyes</h4></div>
+                    <div class="text-success text-center mt-2"><h1>9332</h1></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div id="idcolor3" class="card border-danger mx-sm-1 p-3">
+                    <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-heart" aria-hidden="true"></span></div>
+                    <div class="text-danger text-center mt-3"><h4>Hearts</h4></div>
+                    <div class="text-danger text-center mt-2"><h1>346</h1></div>
+                </div>
+            </div>
+            <div  class="col-md-3">
+                <div id="idcolor4" class="card border-warning mx-sm-1 p-3">
+                    <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-inbox" aria-hidden="true"></span></div>
+                    <div class="text-warning text-center mt-3"><h4>Inbox</h4></div>
+                    <div class="text-warning text-center mt-2"><h1>346</h1></div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+   <div class="jumbotron" style="background-color: #EF5466; color: white;padding-bottom: 3%;padding-top: 2%;">
+       <div class="col-md-12">
+            <h2 class="display-8">Descubre nuestros planes de suscripción!</h2>
+            <p class="lead">Disfruta de las últimas ofertas de nuestra plataforma y lleva tu música al siguiente nivel.<br>Info.</p>
+       </div>
+    </div>     
+   
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="card text-center col-md-3">
+            <div class="card-header text-center border-bottom-0 bg-transparent text-success pt-4">
+                <h5>Deezer Free</h5>
+            </div>
+            <div class="card-body">
+                <h1>0,00€</h1>
+                <h5 class="text-muted"><small>Precio por mes</small></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-male text-success mx-2"></i>56 millones de canciones</li>
+                <li id="gris" class="list-group-item"><i class="fas fa-male text-success mx-2"></i>Sin anuncios</li>
+                <li id="gris"class="list-group-item"><i class="fas fa-male text-success mx-2"></i>Pasa canciones sin límites</li>
+                <li id="gris" class="list-group-item"><i class="fas fa-male text-success mx-2"></i>Modo sin conexión</li>
+                <li id="gris" class="list-group-item"><i class="fas fa-male text-success mx-2"></i>6 perfiles</li>
+            </ul>
+            <div class="card-footer border-top-0">
+                <a href="#" class="text-muted text-uppercase">Create Account <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="card text-center col-md-2">
+            <div class="card-header text-center border-bottom-0 bg-transparent text-success pt-4">
+                <h5>Deezer Premium</h5>
+            </div>
+            <div class="card-body">
+                <h1>9,99€</h1>
+                <h5 class="text-muted"><small>Precio por mes</small></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-male text-success mx-2"></i>56 millones de canciones</li>
+                <li class="list-group-item"><i class="fas fa-venus text-success mx-2"></i>Sin anuncios</li>
+                <li class="list-group-item"><i class="fas fa-gavel text-success mx-2"></i>Pasa canciones sin límites</li>
+                <li class="list-group-item"><i class="fas fa-gavel text-success mx-2"></i>Modo sin conexión</li>
+                <li id="gris" class="list-group-item"><i class="fas fa-male text-success mx-2"></i>6 perfiles</li>
+            </ul>
+            <div class="card-footer border-top-0">
+                <a href="#" class="text-muted text-uppercase">Create Account <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    
+    <div class="card text-center col-md-3">
+        <div class="card-header text-center border-bottom-0 bg-transparent text-success pt-4">
+            <h5>Deezer Family</h5>
+        </div>
+        <div class="card-body">
+            <h1>14,99€</h1>
+            <h5 class="text-muted"><small>Precio por mes</small></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-male text-success mx-2"></i>56 millones de canciones</li>
+            <li class="list-group-item"><i class="fas fa-venus text-success mx-2"></i>Sin Anuncios</li>
+            <li class="list-group-item"><i class="fas fa-male text-success mx-2"></i>Pasa canciones sin límites</li>
+            <li class="list-group-item"><i class="fas fa-venus text-success mx-2"></i>Modo sin conexión</li>
+            <li class="list-group-item"><i class="fas fa-male text-success mx-2"></i>6 perfiles</li>
+
+        </ul>
+        <div class="card-footer border-top-0">
+            <a href="#" class="text-muted text-uppercase">Create Account <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+<br>
+    
+   <div class="footer" style="background-color: #32323D; margin-top:30px;">
+        <div class="container">
+            <div class="row" style="padding: 20px;">
+                <div class="col-md-3" style="color: white;">
+                    <h3 style="color: #2D96C8;"><b>DEEZER</b></h3>
+                    <p>Ofertas</p>
+                    <p>Ventajas</p>
+                    <p>Dispositivos</p>
+                    <p>Ayuda</p>
+                    <p>Quiénes somos</p>
+                    <p>Ofertas de empleo</p>
+                </div>
+                <div class="col-md-3" style="color: white;">
+                    <h3 style="color: #2D96C8;"><b>EXPLORAR</b></h3>
+                    <p>Ofertas</p>
+                    <p>Ventajas</p>
+                    <p>Dispositivos</p>
+                    <p>Ayuda</p>
+                    <p>Quiénes somos</p>
+                    <p>Ofertas de empleo</p>
+                </div>
+                <div class="col-md-3" style="color: white;">
+                    <h3 style="color: #2D96C8;"><b>¿QUIÉNES SOMOS?</b></h3>
+                    <p>Ofertas</p>
+                    <p>Ventajas</p>
+                    <p>Dispositivos</p>
+                    <p>Ayuda</p>
+                    <p>Quiénes somos</p>
+                    <p>Ofertas de empleo</p>
+                </div>
+                <div class="col-md-3" style="color: white;">
+                    <h3 style="color: #2D96C8;"><b>LEGAL</b></h3>
+                    <p>Ofertas</p>
+                    <p>Ventajas</p>
+                    <p>Dispositivos</p>
+                    <p>Ayuda</p>
+                    <p>Quiénes somos</p>
+                    <p>Ofertas de empleo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
