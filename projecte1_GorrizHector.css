@@ -1,41 +1,12 @@
-.video-background-holder {
-    position: relative;
-    background-color: black;
-    height: calc(100vh - 72px);
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .video-background-holder video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-  
-  .video-background-content {
-    position: relative;
-    z-index: 2;
-  }
-  
-  .video-background-overlay {
+
+  #backgrounding {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
+    background-position: center;
+    background-repeat: cover;
+    background-size:cover;
   }
   
   .my-card
@@ -51,23 +22,7 @@
       margin: 0 auto;
   
   }
-  
-  #idcolor1{
-      background-color: rgba(0, 177, 255, 0.05);
-  }
-  
-  #idcolor2{
-      background-color: rgba(0, 186, 21, 0.05);
-  }
-  
-  #idcolor3{
-      background-color: rgba(255, 0, 0, 0.05);
-  }
-  
-  #idcolor4{
-      background-color: rgba(255, 245, 0, 0.05);
-  }
-  
+   
   
   .navbar-nav{
       margin: 60%;

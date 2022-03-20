@@ -4,32 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
     <title>Deezer</title>
     
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="deezer.css" rel="stylesheet" type="text/css">
-
-    <script>
-        window.onload=function(){
-            
-            var c=document.getElementById("miCanvas");
-            var cxt=c.getContext("2d");
-            cxt.fillStyle="lightgrey"; //Relleno
-            cxt.fillRect(0,0,1800,10); 
-            
-            document.getElementById("play").addEventListener("click",function(){
-                document.getElementById("vid").play();
-                document.getElementById("instrucciones").style.display="none";
-            },false);
-            
-            
-        }
-    </script>
-    
 </head>
 
 <body>
@@ -59,22 +39,8 @@
         </div>
     </nav>
     
-    <div class="video-background-holder">
-	    <div class="video-background-overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="video/video.mp4" type="video/mp4">
-        </video>
-        <div class="video-background-content container h-100">
-            <div class="d-flex h-100 text-center align-items-center">
-                <div class="w-100 text-white">
-                    <h1 class="display-4">Siente la música con Deezer!</h1>
-                    <p class="lead mb-0">A continuación te presentamos un vídeo interactivo, el cual te ayudará en la creación de tu primera playlist en Deezer.</p>
-                    <p class="lead mb-0">Prepárate para la revolución.</p><br>
-                    <input type="button" class="btn btn-secondary btn-outline col-sm-2" value="¡Comenzar!"> 
-                    
-                </div>
-            </div>
-        </div>                
+    <div id="backgrounding">
+        <img src="deezer-premium-apk-gratis.png">
     </div>
 
 
@@ -105,32 +71,22 @@
 <br>
     <div class="jumbotron bg-white">
         <div class="row w-100">
-            <div  class="col-md-3">
-                <div id="idcolor1" class="card border-info mx-sm-1 p-3">
-                    <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-car" aria-hidden="true"></span></div>
-                    <div class="text-info text-center mt-3"><h4>Cars</h4></div>
-                    <div class="text-info text-center mt-2"><h1>234</h1></div>
+            <div  class="col-md-4">
+                <div class="card border-info mx-sm-1 p-3">
+                    <div class="text-info text-center mt-3"><h4>¿Por qué elegir Deezer?</h4></div>
+                    <div class="text-info text-center mt-2"><p>Reproduce millones de canciones, podcasts y canales de radio. Accede a nuestra aplicación de música desde todos tus dispositivos.</p></div>
                 </div>
             </div>
-            <div  class="col-md-3">
-                <div id="idcolor2" class="card border-success mx-sm-1 p-3">
-                    <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-eye" aria-hidden="true"></span></div>
-                    <div class="text-success text-center mt-3"><h4>Eyes</h4></div>
-                    <div class="text-success text-center mt-2"><h1>9332</h1></div>
+            <div  class="col-md-4">
+                <div class="card border-success mx-sm-1 p-3">
+                    <div class="text-success text-center mt-3"><h4>Prueba la opción Flow, solo en Deezer</h4></div>
+                    <div class="text-success text-center mt-2"><p>Utilizando el poder de la IA, Flow te ofrece un mix infinito de todos tus favoritos y nuevos descubrimientos en función de tu estado de ánimo.</p></div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div id="idcolor3" class="card border-danger mx-sm-1 p-3">
-                    <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-heart" aria-hidden="true"></span></div>
-                    <div class="text-danger text-center mt-3"><h4>Hearts</h4></div>
-                    <div class="text-danger text-center mt-2"><h1>346</h1></div>
-                </div>
-            </div>
-            <div  class="col-md-3">
-                <div id="idcolor4" class="card border-warning mx-sm-1 p-3">
-                    <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-inbox" aria-hidden="true"></span></div>
-                    <div class="text-warning text-center mt-3"><h4>Inbox</h4></div>
-                    <div class="text-warning text-center mt-2"><h1>346</h1></div>
+            <div class="col-md-4">
+                <div class="card border-danger mx-sm-1 p-3">
+                    <div class="text-danger text-center mt-3"><h4>¿Te has quedado sin Internet? No pasa nada</h4></div>
+                    <div class="text-danger text-center mt-2"><p>Descarga tu música y tus podcasts para escucharlos sin conexión y ahorrarte datos.</p></div>
                 </div>
             </div>
         </div>
